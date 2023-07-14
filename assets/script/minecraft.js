@@ -11,6 +11,9 @@
             const motd = document.getElementById("motd");
             motd.innerHTML = data.motd;
 
+            const version = document.getElementById("version");
+            version.innerHTML = data.server.name;
+
             const playerCounter = document.getElementById("player-count");
             playerCounter.innerHTML = data.players.now;
         } 
